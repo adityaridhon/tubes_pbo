@@ -1,3 +1,5 @@
+package Form;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
@@ -16,10 +18,6 @@ public class Form_Login extends javax.swing.JFrame {
         initComponents();
     }
     
-    void bersih(){
-        t_username.setText("username");
-        t_password.setText("password");
-    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -68,7 +66,7 @@ public class Form_Login extends javax.swing.JFrame {
 
         logo_pegawai.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/title simpeg 2 (1).png"))); // NOI18N
 
-        Username_Text.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Username_Text.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         Username_Text.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         Username_Text.setText("username");
         Username_Text.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204)));
@@ -86,7 +84,7 @@ public class Form_Login extends javax.swing.JFrame {
             }
         });
 
-        Password_Text.setFont(new java.awt.Font("Times New Roman", 1, 18)); // NOI18N
+        Password_Text.setFont(new java.awt.Font("Poppins", 0, 14)); // NOI18N
         Password_Text.setHorizontalAlignment(javax.swing.JTextField.CENTER);
         Password_Text.setText("password");
         Password_Text.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 204, 204)));
@@ -100,8 +98,14 @@ public class Form_Login extends javax.swing.JFrame {
         });
 
         bt_login.setBackground(new java.awt.Color(0, 204, 204));
-        bt_login.setText("LOGIN");
+        bt_login.setFont(new java.awt.Font("Poppins", 1, 12)); // NOI18N
+        bt_login.setText("Login");
         bt_login.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        bt_login.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                bt_loginActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -216,6 +220,13 @@ public class Form_Login extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_Username_TextActionPerformed
 
+    private void bt_loginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bt_loginActionPerformed
+        // TODO add your handling code here:
+        Menu_Utama menuutama = new Menu_Utama();
+        menuutama.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_bt_loginActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -227,7 +238,7 @@ public class Form_Login extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }

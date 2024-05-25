@@ -1,8 +1,10 @@
+package Form;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package main;
+
 
 import java.awt.Color;
 
@@ -49,6 +51,9 @@ public class Menu_Utama extends javax.swing.JFrame {
         pn_line4 = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         btn_pelaporan = new javax.swing.JLabel();
+        pn_btnberanda = new javax.swing.JPanel();
+        pn_line5 = new javax.swing.JPanel();
+        btn_beranda = new javax.swing.JLabel();
         pn_kanan = new javax.swing.JPanel();
         pn_title = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
@@ -58,6 +63,7 @@ public class Menu_Utama extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
+        setSize(new java.awt.Dimension(1280, 720));
         addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 formMouseDragged(evt);
@@ -93,7 +99,7 @@ public class Menu_Utama extends javax.swing.JFrame {
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Data Transfer.png"))); // NOI18N
 
-        btn_datakaryawan.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        btn_datakaryawan.setFont(new java.awt.Font("Poppins Medium", 1, 12)); // NOI18N
         btn_datakaryawan.setForeground(new java.awt.Color(102, 102, 102));
         btn_datakaryawan.setText("Data Karyawan");
         btn_datakaryawan.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -115,9 +121,9 @@ public class Menu_Utama extends javax.swing.JFrame {
             .addGroup(pn_btndatakaryawanLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jLabel4)
-                .addGap(18, 18, 18)
-                .addComponent(btn_datakaryawan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btn_datakaryawan, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
+                .addGap(12, 12, 12))
             .addGroup(pn_btndatakaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pn_btndatakaryawanLayout.createSequentialGroup()
                     .addContainerGap()
@@ -156,7 +162,7 @@ public class Menu_Utama extends javax.swing.JFrame {
 
         jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Coins.png"))); // NOI18N
 
-        btn_gajikaryawan.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        btn_gajikaryawan.setFont(new java.awt.Font("Poppins Medium", 1, 12)); // NOI18N
         btn_gajikaryawan.setForeground(new java.awt.Color(102, 102, 102));
         btn_gajikaryawan.setText("Gaji Karyawan");
         btn_gajikaryawan.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -178,25 +184,22 @@ public class Menu_Utama extends javax.swing.JFrame {
             .addGroup(pn_btndatagajikaryawanLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jLabel5)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btn_gajikaryawan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(12, 12, 12))
             .addGroup(pn_btndatagajikaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pn_btndatagajikaryawanLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(pn_line1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(172, Short.MAX_VALUE)))
+                    .addContainerGap(178, Short.MAX_VALUE)))
         );
         pn_btndatagajikaryawanLayout.setVerticalGroup(
             pn_btndatagajikaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pn_btndatagajikaryawanLayout.createSequentialGroup()
-                .addGroup(pn_btndatagajikaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pn_btndatagajikaryawanLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btn_gajikaryawan, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pn_btndatagajikaryawanLayout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jLabel5)))
+                .addContainerGap()
+                .addGroup(pn_btndatagajikaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_gajikaryawan, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(pn_btndatagajikaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pn_btndatagajikaryawanLayout.createSequentialGroup()
@@ -222,7 +225,7 @@ public class Menu_Utama extends javax.swing.JFrame {
 
         jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Time Span.png"))); // NOI18N
 
-        btn_jadwalkaryawan.setFont(new java.awt.Font("SansSerif", 1, 12)); // NOI18N
+        btn_jadwalkaryawan.setFont(new java.awt.Font("Poppins Medium", 1, 12)); // NOI18N
         btn_jadwalkaryawan.setForeground(new java.awt.Color(102, 102, 102));
         btn_jadwalkaryawan.setText("Jadwal Karyawan");
         btn_jadwalkaryawan.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -244,9 +247,9 @@ public class Menu_Utama extends javax.swing.JFrame {
             .addGroup(pn_btndatajadwalkaryawanLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jLabel6)
-                .addGap(18, 18, 18)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btn_jadwalkaryawan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
+                .addGap(18, 18, 18))
             .addGroup(pn_btndatajadwalkaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pn_btndatajadwalkaryawanLayout.createSequentialGroup()
                     .addContainerGap()
@@ -256,13 +259,10 @@ public class Menu_Utama extends javax.swing.JFrame {
         pn_btndatajadwalkaryawanLayout.setVerticalGroup(
             pn_btndatajadwalkaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pn_btndatajadwalkaryawanLayout.createSequentialGroup()
-                .addGroup(pn_btndatajadwalkaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pn_btndatajadwalkaryawanLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btn_jadwalkaryawan, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pn_btndatajadwalkaryawanLayout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jLabel6)))
+                .addContainerGap()
+                .addGroup(pn_btndatajadwalkaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_jadwalkaryawan, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(pn_btndatajadwalkaryawanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pn_btndatajadwalkaryawanLayout.createSequentialGroup()
@@ -354,7 +354,7 @@ public class Menu_Utama extends javax.swing.JFrame {
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/Graph Report.png"))); // NOI18N
 
-        btn_pelaporan.setFont(new java.awt.Font("SansSerif", 1, 11)); // NOI18N
+        btn_pelaporan.setFont(new java.awt.Font("Poppins Medium", 1, 12)); // NOI18N
         btn_pelaporan.setForeground(new java.awt.Color(102, 102, 102));
         btn_pelaporan.setText("Pelaporan & Analisis");
         btn_pelaporan.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -376,9 +376,9 @@ public class Menu_Utama extends javax.swing.JFrame {
             .addGroup(pn_btnpelaporanLayout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addComponent(jLabel8)
-                .addGap(18, 18, 18)
-                .addComponent(btn_pelaporan, javax.swing.GroupLayout.DEFAULT_SIZE, 109, Short.MAX_VALUE)
-                .addContainerGap())
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btn_pelaporan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(18, 18, 18))
             .addGroup(pn_btnpelaporanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pn_btnpelaporanLayout.createSequentialGroup()
                     .addContainerGap()
@@ -388,19 +388,73 @@ public class Menu_Utama extends javax.swing.JFrame {
         pn_btnpelaporanLayout.setVerticalGroup(
             pn_btnpelaporanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pn_btnpelaporanLayout.createSequentialGroup()
-                .addGroup(pn_btnpelaporanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pn_btnpelaporanLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(btn_pelaporan, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(pn_btnpelaporanLayout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jLabel8)))
+                .addContainerGap()
+                .addGroup(pn_btnpelaporanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(btn_pelaporan, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(pn_btnpelaporanLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(pn_btnpelaporanLayout.createSequentialGroup()
                     .addContainerGap()
                     .addComponent(pn_line4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addContainerGap(71, Short.MAX_VALUE)))
+        );
+
+        pn_btnberanda.setBackground(new java.awt.Color(255, 255, 255));
+
+        pn_line5.setBackground(new java.awt.Color(255, 255, 255));
+
+        javax.swing.GroupLayout pn_line5Layout = new javax.swing.GroupLayout(pn_line5);
+        pn_line5.setLayout(pn_line5Layout);
+        pn_line5Layout.setHorizontalGroup(
+            pn_line5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 10, Short.MAX_VALUE)
+        );
+        pn_line5Layout.setVerticalGroup(
+            pn_line5Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 23, Short.MAX_VALUE)
+        );
+
+        btn_beranda.setFont(new java.awt.Font("Poppins Medium", 1, 12)); // NOI18N
+        btn_beranda.setForeground(new java.awt.Color(102, 102, 102));
+        btn_beranda.setText("Beranda");
+        btn_beranda.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btn_berandaMouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                btn_berandaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                btn_berandaMouseExited(evt);
+            }
+        });
+
+        javax.swing.GroupLayout pn_btnberandaLayout = new javax.swing.GroupLayout(pn_btnberanda);
+        pn_btnberanda.setLayout(pn_btnberandaLayout);
+        pn_btnberandaLayout.setHorizontalGroup(
+            pn_btnberandaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pn_btnberandaLayout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addComponent(btn_beranda, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE)
+                .addGap(51, 51, 51))
+            .addGroup(pn_btnberandaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pn_btnberandaLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(pn_line5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(166, Short.MAX_VALUE)))
+        );
+        pn_btnberandaLayout.setVerticalGroup(
+            pn_btnberandaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(pn_btnberandaLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btn_beranda, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(pn_btnberandaLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(pn_btnberandaLayout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(pn_line5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(8, Short.MAX_VALUE)))
         );
 
         javax.swing.GroupLayout pn_kiriLayout = new javax.swing.GroupLayout(pn_kiri);
@@ -411,16 +465,16 @@ public class Menu_Utama extends javax.swing.JFrame {
                 .addGroup(pn_kiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(pn_kiriLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addGroup(pn_kiriLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(pn_btndatakaryawan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pn_btndatagajikaryawan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pn_btndatajadwalkaryawan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pn_btnexit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(pn_btnpelaporan, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addComponent(pn_btnexit, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(pn_kiriLayout.createSequentialGroup()
                         .addGap(50, 50, 50)
                         .addComponent(jLabel1)
-                        .addGap(0, 0, Short.MAX_VALUE)))
+                        .addGap(0, 38, Short.MAX_VALUE))
+                    .addComponent(pn_btnpelaporan, javax.swing.GroupLayout.PREFERRED_SIZE, 194, Short.MAX_VALUE)
+                    .addComponent(pn_btndatajadwalkaryawan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pn_btndatakaryawan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pn_btndatagajikaryawan, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(pn_btnberanda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
         pn_kiriLayout.setVerticalGroup(
@@ -428,28 +482,32 @@ public class Menu_Utama extends javax.swing.JFrame {
             .addGroup(pn_kiriLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jLabel1)
-                .addGap(50, 50, 50)
+                .addGap(72, 72, 72)
+                .addComponent(pn_btnberanda, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(pn_btndatakaryawan, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(18, 18, 18)
                 .addComponent(pn_btndatagajikaryawan, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(18, 18, 18)
                 .addComponent(pn_btndatajadwalkaryawan, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
+                .addGap(18, 18, 18)
                 .addComponent(pn_btnpelaporan, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 99, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 120, Short.MAX_VALUE)
                 .addComponent(pn_btnexit, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
         getContentPane().add(pn_kiri, java.awt.BorderLayout.LINE_START);
 
-        pn_kanan.setBackground(new java.awt.Color(255, 255, 255));
+        pn_kanan.setBackground(new java.awt.Color(187, 187, 187));
         pn_kanan.setLayout(new java.awt.BorderLayout());
 
         pn_title.setBackground(new java.awt.Color(0, 204, 204));
+        pn_title.setForeground(new java.awt.Color(255, 255, 255));
         pn_title.setPreferredSize(new java.awt.Dimension(600, 70));
 
-        jLabel2.setFont(new java.awt.Font("SansSerif", 1, 20)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Poppins ExtraBold", 0, 24)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Sistem Informasi Kepegawaian");
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/People_1.png"))); // NOI18N
@@ -461,26 +519,23 @@ public class Menu_Utama extends javax.swing.JFrame {
             .addGroup(pn_titleLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jLabel3)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addComponent(jLabel2)
-                .addContainerGap(205, Short.MAX_VALUE))
+                .addContainerGap(398, Short.MAX_VALUE))
         );
         pn_titleLayout.setVerticalGroup(
             pn_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pn_titleLayout.createSequentialGroup()
-                .addGroup(pn_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(pn_titleLayout.createSequentialGroup()
-                        .addGap(22, 22, 22)
-                        .addComponent(jLabel2))
-                    .addGroup(pn_titleLayout.createSequentialGroup()
-                        .addGap(10, 10, 10)
-                        .addComponent(jLabel3)))
+                .addGap(10, 10, 10)
+                .addGroup(pn_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel2)
+                    .addComponent(jLabel3))
                 .addContainerGap(10, Short.MAX_VALUE))
         );
 
         pn_kanan.add(pn_title, java.awt.BorderLayout.PAGE_START);
 
-        pn_dasar.setBackground(new java.awt.Color(204, 204, 204));
+        pn_dasar.setBackground(new java.awt.Color(187, 187, 187));
 
         pn_utama.setBackground(new java.awt.Color(255, 255, 255));
         pn_utama.setLayout(new java.awt.BorderLayout());
@@ -490,16 +545,16 @@ public class Menu_Utama extends javax.swing.JFrame {
         pn_dasarLayout.setHorizontalGroup(
             pn_dasarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pn_dasarLayout.createSequentialGroup()
-                .addGap(20, 20, 20)
-                .addComponent(pn_utama, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(25, 25, 25)
+                .addComponent(pn_utama, javax.swing.GroupLayout.DEFAULT_SIZE, 830, Short.MAX_VALUE)
                 .addGap(20, 20, 20))
         );
         pn_dasarLayout.setVerticalGroup(
             pn_dasarLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pn_dasarLayout.createSequentialGroup()
                 .addGap(20, 20, 20)
-                .addComponent(pn_utama, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(20, 20, 20))
+                .addComponent(pn_utama, javax.swing.GroupLayout.PREFERRED_SIZE, 490, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pn_kanan.add(pn_dasar, java.awt.BorderLayout.CENTER);
@@ -600,6 +655,18 @@ public class Menu_Utama extends javax.swing.JFrame {
       pn_line4.setBackground(new Color(255, 255, 255));
     }//GEN-LAST:event_btn_pelaporanMouseExited
 
+    private void btn_berandaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_berandaMouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_berandaMouseClicked
+
+    private void btn_berandaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_berandaMouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_berandaMouseEntered
+
+    private void btn_berandaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btn_berandaMouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btn_berandaMouseExited
+
     /**
      * @param args the command line arguments
      */
@@ -611,7 +678,7 @@ public class Menu_Utama extends javax.swing.JFrame {
          */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
+                if ("Windows".equals(info.getName())) {
                     javax.swing.UIManager.setLookAndFeel(info.getClassName());
                     break;
                 }
@@ -636,6 +703,7 @@ public class Menu_Utama extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel btn_beranda;
     private javax.swing.JLabel btn_datakaryawan;
     private javax.swing.JLabel btn_exit;
     private javax.swing.JLabel btn_gajikaryawan;
@@ -649,6 +717,7 @@ public class Menu_Utama extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JPanel pn_btnberanda;
     private javax.swing.JPanel pn_btndatagajikaryawan;
     private javax.swing.JPanel pn_btndatajadwalkaryawan;
     private javax.swing.JPanel pn_btndatakaryawan;
@@ -662,6 +731,7 @@ public class Menu_Utama extends javax.swing.JFrame {
     private javax.swing.JPanel pn_line2;
     private javax.swing.JPanel pn_line3;
     private javax.swing.JPanel pn_line4;
+    private javax.swing.JPanel pn_line5;
     private javax.swing.JPanel pn_title;
     private javax.swing.JPanel pn_utama;
     // End of variables declaration//GEN-END:variables
